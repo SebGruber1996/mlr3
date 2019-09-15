@@ -122,6 +122,13 @@ local({
     regr = "regr.mse"
   )
 
+
+  ### Tuner
+  mlr_reflections$tuner_properties = c(
+    "singlecrit", "multicrit"
+  )
+
+
   ### ResampleResult
   mlr_reflections$rr_names = c("task", "learner", "resampling", "iteration", "prediction")
 })
